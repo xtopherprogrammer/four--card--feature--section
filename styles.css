@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+
+/* Colors */
+:root {
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
+  --verydarkbl: hsl(234, 12%, 34%);
+  --grayisblue: hsl(229, 6%, 66%);
+  --verylightgray: hsl(0, 0%, 98%);
+}
+
+/* Global styles */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  font-size: 2.17rem;
+  margin-bottom: 0.3rem;
+  font-weight: 400;
+  color: var(--grayisblue);
+}
+h2 {
+  margin-top: 0;
+}
+h2,
+h3 {
+  color: var(--verydarkbl);
+}
+p {
+  color: var(--grayisblue);
+}
+header {
+    text-align: center;
+}
+header p {
+  margin-bottom: 5rem;
+}
+@media (min-width: 900px) {
+    header p {
+        width: 50rem;
+        text-align: center;
+    }
+}
+
+/* Main project */
+.wrapper {
+  padding: 3.9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+img {
+  width: 50px;
+}
+.image {
+  text-align: right;
+}
+.card {
+  max-width: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 3rem;
+  box-shadow: 0 0 10px lightgrey;
+}
+.card__wrapper {
+  padding: 2.1rem;
+}
+.card__wrapper p {
+  font-size: 1.3rem;
+}
+.color {
+  height: 5px;
+}
+.one {
+  background: var(--cyan);
+}
+.two {
+  background: var(--red);
+}
+.three {
+  background: var(--orange);
+}
+.four {
+  background: var(--blue);
+}
+@media (min-width: 1440px) {
+    .wrapper {
+        position: relative;
+        width: 1000px;
+        margin: 0 auto;
+    }
+    .card--one {
+        position: absolute;
+        top: 380px;
+        left: 670px;
+    }
+    .card--two {
+        position: absolute;
+        bottom: 150px;
+        right: 670px;
+    }
+}
